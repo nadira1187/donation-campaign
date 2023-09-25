@@ -1,0 +1,137 @@
+{
+    "products": [
+      {  
+        "id": "1",
+        "picture": "https://i.ibb.co/bzhz9Lt/Health.png",
+        "title": "Clean Water for Children",
+        "category": "Health",
+        "category_bg": "#0052FF",
+        "card_bg": "#0052FF26",
+        "text_button_bg": "#0052FF26",
+        "description": "Support our mission to provide clean and safe drinking water to children in need. Your donation can make a significant impact on their health and well-being.",
+        "price": "$40 "
+      },
+      {
+        "id": "2",
+        "picture": "https://i.ibb.co/5vQ1Fh9/Education.png",
+        "title": "Good Education",
+        "category": "Education",
+        "category_bg": "#FF444A",
+        "card_bg": "#FF442A26",
+        "text_button_bg": "#FF442A26",
+        "description": "Help us improve education opportunities for underprivileged children. Your contribution can pave the way for a brighter future.",
+        "price": "$35 "
+      },
+      {
+        "id": "3",
+        "picture": "https://i.ibb.co/v1rPYkS/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg": "#9b59b6",
+        "card_bg": "#d7bde2",
+        "text_button_bg": "#d7bde2",
+        "description": "Join us in our mission to provide nutritious meals to those in need. Your donation can help combat hunger and malnutrition.",
+        "price": "$200 "
+      },
+      {
+        "id": "4",
+        "picture": "https://i.ibb.co/KwQcrx2/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg": "#79C23F",
+        "card_bg": "#79C23F26",
+        "text_button_bg": "#79C23F26",
+        "description": "Contribute to our clothing drive and provide gently used clothing to those less fortunate. Your support can bring warmth and comfort to many.",
+        "price": "$150"
+      },
+      {
+        "id": "5",
+        "picture": "https://i.ibb.co/bzhz9Lt/Health.png",
+        "title": "Medical Supplies",
+        "category": "Health",
+        "category_bg": "#0052FF",
+        "card_bg": "#0052FF26",
+        "text_button_bg": "#0052FF26",
+        "description": "Help us deliver essential medical supplies to underserved communities. Your donation can save lives and improve healthcare access.",
+        "price": "$140 "
+      },
+      {
+        "id": "6",
+        "picture": "https://i.ibb.co/5vQ1Fh9/Education.png",
+        "title": "Educational Materials",
+        "category": "Education",
+        "category_bg": "#FF444A",
+        "card_bg": "#FF442A26",
+        "text_button_bg": "#FF442A26",
+        "description": "Support our initiative to provide educational materials to schools in need. Your contribution can empower young minds.",
+        "price": "$265"
+      },
+      {
+        "id": "7",
+        "picture": "https://i.ibb.co/v1rPYkS/Food.png",
+        "title": "Emergency Food Aid",
+        "category": "Food",
+        "category_bg": "#9b59b6",
+        "card_bg": "#d7bde2",
+        "text_button_bg": "#d7bde2",
+        "description": "Provide emergency food aid to communities facing hunger crises. Your donation can make an immediate difference in their lives.",
+        "price": "$320 "
+      },
+      {
+        "id": "8",
+        "picture": "https://i.ibb.co/KwQcrx2/Clothing.png",
+        "title": "Shelter for the Homeless",
+        "category": "Clothing",
+        "category_bg": "#79C23F",
+        "card_bg": "#79C23F26",
+        "text_button_bg": "#79C23F26",
+        "description": "Support our efforts to provide shelter and essentials to homeless individuals. Your donation can offer hope and warmth.",
+        "price": "$335 "
+      },
+      {
+        "id": "9",
+        "picture": "https://i.ibb.co/bzhz9Lt/Health.png",
+        "title": "Healthcare Clinics",
+        "category": "Health",
+        "category_bg": "#0052FF",
+        "card_bg": "#0052FF26",
+        "text_button_bg": "#0052FF26",
+        "description": "Help us establish healthcare clinics in underserved areas. Your donation can improve access to medical care for many.",
+        "price": "$150 "
+      },
+      {
+        "id": "10",
+        "picture": "https://i.ibb.co/5vQ1Fh9/Education.png",
+        "title": "Scholarship Fund",
+        "category": "Education",
+        "category_bg": "#FF444A",
+        "card_bg": "#FF442A26",
+        "text_button_bg": "#FF442A26",
+        "description": "Contribute to our scholarship fund and support the education of deserving students. Your donation can change lives.",
+        "price": "$230"
+      },
+      {
+        "id": "11",
+        "picture": "https://i.ibb.co/v1rPYkS/Food.png",
+        "title": "Food Banks",
+        "category": "Food",
+        "category_bg": "#9b59b6",
+        "card_bg": "#d7bde2",
+        "text_button_bg": "#d7bde2",
+        "description": "Support local food banks in feeding hungry families. Your donation can ensure no one goes to bed hungry.",
+        "price": "$120 "
+      },
+      {
+        "id": "12",
+        "picture": "https://i.ibb.co/KwQcrx2/Clothing.png",
+        "title": "Warm Clothing Drive",
+        "category": "Clothing",
+        "category_bg": "#79C23F",
+        "card_bg": "#79C23F26",
+        "text_button_bg": "#79C23F26",
+        "description": "Join our initiative to provide warm clothing to those in cold climates. Your support can bring comfort and relief.",
+        "price": "$125 "
+      }
+    ]
+  }
+  

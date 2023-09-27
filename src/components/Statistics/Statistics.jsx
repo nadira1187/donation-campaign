@@ -3,17 +3,18 @@ import { useLoaderData } from 'react-router-dom';
 import { PieChart, Pie, Cell } from 'recharts';
 
 const Statistics = () => {
-    const sonData = useLoaderData();
+    const { products } = useLoaderData([]);
     const [lData, setLData] = useState([]);
 
     useEffect(() => {
-        const localData = JSON.parse(localStorage.getItem('DonationPage')) || [];
+        const localData = JSON.parse(localStorage.getItem('DonationPage') || "[]");
         setLData(localData);
     }, []);
-    console.log(lData)
 
-    const totalDonations = sonData?.length; // Fix the error here
+    const totalDonations = products.length
     const yourDonations = lData.length;
+
+    const donationPercentage = (yourDonations / totalDonations) * 100;
 
     const pieData = [
         {
@@ -22,8 +23,8 @@ const Statistics = () => {
         },
         {
             name: "Your Donation",
-            value: yourDonations
-        }
+            value: donationPercentage
+        },
     ];
 
     const COLORS = ['#FF444A', '#00C49F'];
@@ -64,13 +65,12 @@ const Statistics = () => {
             <div className='flex flex-col md:flex-row justify-center gap-x-7 items-center text-center lg:ml-28 mb-28'>
                 <div className='flex items-center gap-x-3'>
                     <p>Your Donation</p>
-                    <div className='bg-[#FF444A] h-4 w-12 rounded mt-1'></div>
-                    <p>{yourDonations}</p>
+                    <div className=' bg-[#00C49F] h-4 w-12 rounded mt-1'></div>
                 </div>
                 <div className='flex items-center gap-x-3'>
                     <p>Total Donation</p>
-                    <div className='bg-[#00C49F] h-4 w-12 rounded mt-1'></div>
-                    <p>{totalDonations}</p>
+                    <div className='bg-[#FF444A] h-4 w-12 rounded mt-1'></div>
+                    
                 </div>
             </div>
         </section>

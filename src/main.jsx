@@ -5,8 +5,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import Root from './components/root/root';
-import Home from './components/home/home';
+import Root from './components/Root/Root';
+import Home from './components/Home/Home';
 import Statistics from './components/Statistics/Statistics';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import DonationDetails from './components/DonationDetails/DonationDetails';
@@ -29,6 +29,7 @@ const router = createBrowserRouter([
        {
        path: "/statistics",
        element: <Statistics></Statistics>,
+       loader:() => fetch('./data.json')
        },
        {
         path: "/donation/:id",

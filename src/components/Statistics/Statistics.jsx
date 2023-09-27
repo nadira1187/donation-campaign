@@ -14,7 +14,7 @@ const Statistics = () => {
     const totalDonations = products.length
     const yourDonations = lData.length;
 
-    const donationPercentage = (yourDonations / totalDonations) * 100;
+    // const donationPercentage = (yourDonations / totalDonations) * 100;
 
     const pieData = [
         {
@@ -23,7 +23,7 @@ const Statistics = () => {
         },
         {
             name: "Your Donation",
-            value: donationPercentage
+            value: yourDonations
         },
     ];
 
@@ -65,7 +65,7 @@ const Statistics = () => {
             <div className='flex flex-col md:flex-row justify-center gap-x-7 items-center text-center lg:ml-28 mb-28'>
                 <div className='flex items-center gap-x-3'>
                     <p>Your Donation</p>
-                    <div className=' bg-[#00C49F] h-4 w-12 rounded mt-1'></div>
+                    <div className='bg-[#00C49F] h-4 w-12 rounded mt-1'></div>
                 </div>
                 <div className='flex items-center gap-x-3'>
                     <p>Total Donation</p>

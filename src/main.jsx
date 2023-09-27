@@ -7,11 +7,10 @@ import {
 import './index.css'
 import Root from './components/root/root';
 import Home from './components/home/home';
-
-import Donation from './components/Donation/Donation';
 import Statistics from './components/Statistics/Statistics';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import DonationDetails from './components/DonationDetails/DonationDetails';
+import DonationPage from './components/DonationPage/DonationPage';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/donation",
-        element: <Donation></Donation>,
+        element: <DonationPage></DonationPage>,
         },
        {
        path: "/statistics",

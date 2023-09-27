@@ -15,16 +15,16 @@ const DonationCard = ({ donation }) => {
             />
           </div>
           <div className="p-6">
-            <h6 className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
+            <h6 style={{ color: donation.category_bg}} className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
               {donation.category}
             </h6>
-            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <h4 style={{ color: donation.category_bg}} className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               {donation.title}
             </h4>
-            <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-              ${donation.price}
+            <p style={{ color: donation.category_bg}} className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+              {donation.price}
             </p>
-            <button className="btn bg-[#FF444A] btn-primary border-none ml-6 mt-4">
+            <button style={{ backgroundColor: donation.text_button_bg , color:donation.category_bg}}className="btn  border-none ml-6 mt-4">
               View Details
             </button>
           </div>

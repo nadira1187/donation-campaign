@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { PieChart, Pie, Cell } from 'recharts';
@@ -6,27 +5,26 @@ import { PieChart, Pie, Cell } from 'recharts';
 const Statistics = () => {
     const sonData = useLoaderData();
     const [lData, setLData] = useState([]);
-    
+
     useEffect(() => {
-        const localData = JSON.parse(localStorage.getItem('DonationPage')) || []; 
-        console.log(localData);
+        const localData = JSON.parse(localStorage.getItem('DonationPage')) || [];
         setLData(localData);
     }, []);
+    console.log(lData)
 
-    //console.log(sonData?.length); 
-    console.log(lData?.length); 
+    const totalDonations = sonData?.length; // Fix the error here
+    const yourDonations = lData.length;
 
     const pieData = [
         {
-            name: "total donation",
-            value: sonData?.length || 0, 
+            name: "Total Donation",
+            value: totalDonations
         },
         {
-            name: "your donation",
-            value: lData?.length || 0, 
-        },
+            name: "Your Donation",
+            value: yourDonations
+        }
     ];
-    //console.log(pieData);
 
     const COLORS = ['#FF444A', '#00C49F'];
 
@@ -67,10 +65,12 @@ const Statistics = () => {
                 <div className='flex items-center gap-x-3'>
                     <p>Your Donation</p>
                     <div className='bg-[#FF444A] h-4 w-12 rounded mt-1'></div>
+                    <p>{yourDonations}</p>
                 </div>
                 <div className='flex items-center gap-x-3'>
                     <p>Total Donation</p>
                     <div className='bg-[#00C49F] h-4 w-12 rounded mt-1'></div>
+                    <p>{totalDonations}</p>
                 </div>
             </div>
         </section>
